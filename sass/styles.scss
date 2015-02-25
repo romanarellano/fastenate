@@ -1,10 +1,14 @@
 @import "http://fonts.googleapis.com/css?family=Lato|Oswald.css";
 
+ $subtitle : #3A3A3C;
+ $menu-color : #818285;
+ $hover-color : #F1592A;
+ $orange-background: #AD421B;
 
 body {
   
   background-image:url("../assets/bg.jpg");
-   
+ 
 }
 
 .title{
@@ -48,7 +52,7 @@ body {
 
   position:relative;
   display:block;
-  background:rgb(58,58,60);
+  background:$subtitle;
   padding:0.2em 0;
   text-align:center;
    
@@ -59,28 +63,112 @@ body {
 
       ul {  
 
-        color: rgb(129,130,133);
+        color: $menu-color;
         text-transform: uppercase;
-
-        font-weight: 900;
         padding:0;
 
-         
 
-         li {
+        li {
 
             display:inline;
             font-size:1.5rem;
             font-family: "Lato";
-            margin-right:1em;
+            font-weight: 300;
             
-            
-            a {
-              //position:relative;
-              // display:inline;
-              
+            :hover{
+              color:$hover-color;
+
+
+              span{
+                  padding:0 0.2em;
+                  
+                  a {
+                    //position:relative;
+                    // display:inline;
+
+                  }
+
+              }
             }
-         }
+        }
       }
     }
+}
+
+.plus_sign{
+  position:absolute;
+  display:inline-block;
+  background:$orange-background;
+  width:3em;
+  height:2.7em;
+  text-align:center;
+  padding-top: 0.3em;
+  top:1.4em;
+  right:1.5em;
+  color: #FFF;
+
+     span{
+     
+        color:#FFF;
+        font-size: 2.5em;
+       
+      }
+   
+}
+
+
+.blocks{
+  float:left;
+  display:inline-block;
+  position:relative;
+  width:38%;
+  height:28em;
+  background:#FFFFFF;
+  margin: 0em 1em 1em 0em;
+  padding:1em 1em;
+  
+  .block_image{
+
+
+    background-image: url("http://placekitten.com/g/200/300");
+    height:15em;
+
+   h2{
+      letter-spacing: 34px;
+      font-family: "Oswald";
+      font-size: 4em;
+    
+
+    ul.publisher{
+
+      
+
+      li{
+        
+       
+      }
+
+    }
+
+  }
+
+
+}
+
+}
+
+.block_container{
+  display:block;
+  margin:  3em auto;
+  max-width: 68%;
+
+
+}
+
+ .clearfix {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
