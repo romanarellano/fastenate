@@ -126,37 +126,27 @@ body {
   background:#FFFFFF;
   margin: 0em 1em 1em 0em;
   padding:1em 1em;
+  border:#FFF 8px solid;
   
-  .block_image{
+  &:hover{
 
-
-    background-image: url("http://placekitten.com/g/200/300");
-    height:15em;
-
-   h2{
-      letter-spacing: 34px;
-      font-family: "Oswald";
-      font-size: 4em;
-    
-
-    ul.publisher{
-
-      
-
-      li{
-        
-       
-      }
-
-    }
+    border:orange 8px solid;
 
   }
 
+  
+  
+     .block_image{
 
+
+      background-image: url("http://placekitten.com/g/200/300");
+      height:15em;
+
+      }
 }
 
-}
 
+ 
 .block_container{
   display:block;
   margin:  3em auto;
