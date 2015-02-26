@@ -1,2 +1,132 @@
-body h1 {
-  background-color: #fff; }
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald.css);
+body {
+  background-image: url("../assets/bg.jpg");
+  margin: 0; }
+
+.title {
+  display: block;
+  background: #FFF;
+  background-image: url("../assets/header_bg.svg");
+  background-repeat: no-repeat;
+  background-size: 16em 6em;
+  background-position: center;
+  height: 2.5em;
+  margin: 0; }
+  .title a span {
+    position: relative;
+    display: block;
+    background-image: url("../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4em 5em;
+    height: 2.5em; }
+
+.container {
+  margin: 0 auto; }
+
+.menu {
+  position: relative;
+  display: block;
+  background: #3A3A3C;
+  padding: 0.2em 0;
+  text-align: center; }
+  .menu nav {
+    margin: 0 auto; }
+    .menu nav ul {
+      color: #818285;
+      text-transform: uppercase;
+      padding: 0; }
+      .menu nav ul li {
+        display: inline;
+        font-size: 1.5rem;
+        font-family: "Lato";
+        font-weight: 300; }
+        .menu nav ul li :hover {
+          color: #F1592A; }
+          .menu nav ul li :hover span {
+            padding: 0 0.2em; }
+
+.plus_sign {
+  position: absolute;
+  display: inline-block;
+  background: #AD421B;
+  width: 3em;
+  height: 2.7em;
+  text-align: center;
+  padding-top: 0.3em;
+  top: 1.4em;
+  right: 1.5em;
+  color: #FFF; }
+  @media only screen and (min-width: 60.063em) and (max-width: 80em) {
+    .plus_sign {
+      background: #FFF;
+      border: 3px solid orange;
+      width: 2.5em;
+      height: 2.7em; } }
+  .plus_sign span {
+    color: #FFF;
+    font-size: 2.5em; }
+    @media only screen and (min-width: 60.063em) and (max-width: 80em) {
+      .plus_sign span {
+        color: red; } }
+
+.blocks {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 38%;
+  height: 30em;
+  background: #FFFFFF;
+  margin: 0em 1em 1.5em 0em;
+  padding: 1.7em 1em;
+  border: #FFF 8px solid; }
+  @media only screen and (max-width: 60em) {
+    .blocks {
+      margin: 1em auto;
+      display: block;
+      width: 78%;
+      height: 28em; } }
+  @media only screen and (min-width: 60.063em) and (max-width: 80em) {
+    .blocks {
+      height: 30em;
+      padding: 2em 1em; } }
+  .blocks:hover {
+    border: orange 8px solid; }
+  .blocks .block_image {
+    background-image: url("http://placekitten.com/g/200/300");
+    height: 18em; }
+  .blocks h2 {
+    color: #757679;
+    font-family: "Oswald";
+    font-weight: 400; }
+  .blocks p {
+    color: #757679; }
+  .blocks ul.publisher {
+    display: inline;
+    color: #C1C2C4;
+    padding: 0;
+    width: 55px; }
+    .blocks ul.publisher li {
+      display: inline;
+      list-style-type: none; }
+    .blocks ul.publisher li:before {
+      content: " ";
+      background-color: orange;
+      display: inline-block;
+      border-radius: 100%;
+      width: 5px;
+      height: 3px;
+      vertical-align: middle; }
+    .blocks ul.publisher li:first-child:before {
+      display: none; }
+
+.block_container {
+  margin: 3em auto;
+  max-width: 68%; }
+
+.clearfix {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
