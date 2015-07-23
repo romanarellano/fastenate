@@ -46,6 +46,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif; 
   margin-top: 19px;
+  overflow: hidden;
+  
   }
 
 a {
@@ -130,7 +132,7 @@ header {
     max-height: 52px;
     overflow: hidden;
     line-height: 26px; 
-    
+   
   }
   .box ul {
     margin-top: 10px;
@@ -154,7 +156,10 @@ header {
     font-size: 13px;
     line-height: 16px;
     max-height: 64px;
-    overflow: hidden; }
+  text-overflow: ellipsis;
+  padding-bottom: 1px;
+   
+     }
 
 footer {
   background-color: #2C2C2E;
